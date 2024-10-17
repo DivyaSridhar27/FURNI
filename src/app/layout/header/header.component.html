@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-green justify-content-center">
+            <div class="col-md-2">
+                <a class="navbar-brand" (click)="redirectTo('home')">Furni.</a>
+            </div>
+            <div class="col-md-6">
+                <div class="collapse navbar-collapse float-end" id="navbarNav">
+                    <ul class="navbar-nav header-links">
+                        <li class="nav-item">
+                            <a class="nav-link" (click)="redirectTo('home')" [ngClass]="{'active-link': currentUrl === '/home'}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" (click)="redirectTo('shop')" [ngClass]="{'active-link': currentUrl === '/shop'}">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" (click)="redirectTo('services')" [ngClass]="{'active-link': currentUrl === '/services'}">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" (click)="redirectTo('about')" [ngClass]="{'active-link': currentUrl === '/about'}">About Us</a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" (click)="redirectTo('blog')" [ngClass]="{'active-link': currentUrl === '/blog'}">Blog</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" (click)="redirectTo('contact')" [ngClass]="{'active-link': currentUrl === '/contact'}">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <div class="collapse navbar-collapse float-end" id="navbarNav">
+                    <ul class="navbar-nav header-links">
+                        <li class="nav-item">
+                            <a class="nav-link float-end" href="/layout" title="Login">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cart" title="Cart">
+                                <i class="fa fa-shopping-cart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
